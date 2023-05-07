@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './ImageGalleryItem.module.css';
+import PropTypes from 'prop-types';
 
 export default function ImageGalleryItem({ imageData, modalHandler }) {
   const { id, webformatURL, largeImageURL } = imageData;
@@ -14,3 +15,8 @@ export default function ImageGalleryItem({ imageData, modalHandler }) {
     </li>
   );
 }
+
+ImageGalleryItem.propTypes = {
+  imageData: PropTypes.object.isRequired,
+  modalHandler: PropTypes.func.isRequired,
+};

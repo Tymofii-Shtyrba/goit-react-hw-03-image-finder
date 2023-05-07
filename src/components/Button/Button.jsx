@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Button.module.css';
+import PropTypes from 'prop-types';
 
 export default function Button({ learnMore }) {
   return (
@@ -8,3 +9,7 @@ export default function Button({ learnMore }) {
     </button>
   );
 }
+
+Button.propTypes = {
+  learnMore: PropTypes.func.isRequired,
+};
