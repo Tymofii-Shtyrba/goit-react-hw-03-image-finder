@@ -38,7 +38,7 @@ export default class App extends Component {
 
   openModal = e => {
     const largeImageRef = this.state.imagesData.filter(image => {
-      return image.id == e.target.id;
+      return image.id === Number(e.target.id);
     })[0].largeImageURL;
     this.setState({
       isModalOpen: true,
