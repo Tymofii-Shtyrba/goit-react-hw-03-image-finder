@@ -1,4 +1,3 @@
-import { logRoles } from "@testing-library/react";
 import axios from "axios";
 
 axios.defaults.baseURL = 'https://pixabay.com/api/';
